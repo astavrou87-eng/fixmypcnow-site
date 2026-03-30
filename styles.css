@@ -344,13 +344,18 @@ button, input, select, textarea { font: inherit; }
 
 .feature-list li {
   display: flex;
-  gap: .6rem;
   align-items: flex-start;
+  gap: .6rem;
 }
 
 .tick {
   color: #16a34a;
   font-weight: 900;
+  flex-shrink: 0;
+  width: 1.2rem;
+  line-height: 1.2;
+  margin-top: 0.08rem;
+  text-align: center;
 }
 
 form {
