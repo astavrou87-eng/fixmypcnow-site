@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report your computer issue first so we can recommend the right service before payment.</title>
+  <meta name="description" content="Contact Fix My PC Now to report a Windows PC or laptop fault before booking remote support or collection and return.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="canonical" href="https://fixmypcnow.co.uk/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Report your computer issue first so we can recommend the right service before payment.">
+  <meta property="og:description" content="Contact Fix My PC Now to report a Windows PC or laptop fault before booking remote support or collection and return.">
+  <meta property="og:image" content="assets/hero.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-page="contact">
+  <div class="site-shell">
+    <header id="site-header" class="site-header"></header>
+
+    <main class="container">
+      <section class="page-hero">
+        <div class="hero-copy">
+          <p class="kicker">computer repair near me · laptop repair near me · local computer repair</p>
+          <h1>Report Your Issue First</h1>
+          <p class="lead">
+            Not sure what you need? Tell us what’s happening and we’ll recommend the right service before any payment is made.
+          </p>
+
+          <div class="inline-actions">
+            <a class="btn btn-primary" href="mailto:support@fixmypcnow.co.uk">Email Support</a>
+            <a class="btn btn-accent" href="tel:08001234567">Call Now</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="assets/remote-support.jpg" alt="Support agent helping a customer remotely">
+        </div>
+      </section>
+
+      <section class="section split">
+        <div class="card">
+          <h2>Issue report form</h2>
+
+          <div id="form-success-message" class="form-note" style="display:none;">
+            ✅ Thank you — your enquiry has been sent successfully.  
+            We’ll review the details and get back to you as soon as possible.
+          </div>
+
+          <form action="https://formspree.io/f/xdapgdvq" method="POST">
+            <input type="hidden" name="_subject" value="New Fix My PC Now enquiry">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://fixmypcnow.co.uk/contact.html?sent=1">
+
+            <input name="full_name" placeholder="Full name" required>
+            <input name="telephone" placeholder="Telephone number" required>
+            <input name="email" type="email" placeholder="Email address" required>
+
+            <select name="device_type">
+              <option>Windows PC</option>
+              <option>Windows Laptop</option>
+              <option>Printer / Peripheral</option>
+              <option>Other</option>
+            </select>
+
+            <textarea name="issue_description" placeholder="What is happening, when it started, and what you have already tried..." required></textarea>
+
+            <button class="btn btn-primary" type="submit">Send enquiry</button>
+
+            <!-- 🔥 Conversion booster -->
+            <p class="small" style="text-align:center; margin-top:0.75rem;">
+              We usually respond within minutes during working hours
+            </p>
+          </form>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <h3>How it works</h3>
+            <p>
+              You explain the issue in your own words — no technical knowledge needed.<br><br>
+
+              We review your message and recommend the correct service before any payment is made, so you don’t pay for the wrong option.<br><br>
+
+              If remote support is suitable, we guide you step-by-step through a secure connection using Remote Utilities, with full visibility and your permission at all times.<br><br>
+
+              For more complex faults, we may recommend collection & return so the repair can be handled safely and thoroughly.<br><br>
+
+              We keep everything clear, simple, and explained throughout — no jargon, no pressure, and no obligation to proceed.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Direct contact</h3>
+            <p><strong>Email:</strong><br>
+              <a href="mailto:support@fixmypcnow.co.uk">support@fixmypcnow.co.uk</a>
+            </p>
+            <p><strong>Call:</strong><br>
+              <a href="tel:08001234567">0800 123 4567</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer" class="footer"></footer>
+  </div>
+
+  <script src="script.js" defer></script>
+  <script>
+    if (window.location.search.includes('sent=1')) {
+      const successBox = document.getElementById('form-success-message');
+      if (successBox) {
+        successBox.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>

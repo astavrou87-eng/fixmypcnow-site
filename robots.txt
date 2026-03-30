@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fixmypcnow.co.uk/sitemap.xml
